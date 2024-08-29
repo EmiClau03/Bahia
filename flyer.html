@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyer de Evento</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .page {
+            page-break-after: always;
+            width: 209,9mm;
+            height: 1121px;
+            padding: 20mm;
+            box-sizing: border-box;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .page:last-child {
+            page-break-after: auto;
+        }
+        p {
+            position: absolute;
+    color: #5A4663;
+    font-size: 18px; /* Tamaño de fuente correcto */
+    font-weight: bold; /* Negrita */
+    font-family: 'Open Sans', sans-serif; /* Fuente correcta */
+
+}
+#cliente{
+    
+    top: 292px;
+    left: 397px;
+}
+#ciudad{
+    top: 336px;
+    left:208px ;
+}
+#personas{
+    top: 382px;
+    left: 385px;
+}
+#fechaEvento{
+    top: 429px;
+    left: 211px;
+}
+#fechaEmitida{
+    top: 182px;
+    left: 590px;
+}
+#costoFinalFlyer{
+    font-size: 24px;
+    top: 422px;
+    left: 487px;
+}
+        /* Ajusta los estilos según sea necesario */
+    </style>
+</head>
+<body>
+    <!-- Página 1 -->
+    <div class="page" style="background-image: url('src/1.png');">
+        <div class="content">
+            <!-- Datos a agregar en la primera página -->
+            
+        </div>
+    </div>
+
+    <!-- Página 2 -->
+    <div class="page" style="background-image: url('src/2.png');">
+        <div class="content">
+            
+            <div class="info-line">
+                <p id="cliente">s</p>
+            </div>
+            <div class="info-line">
+                <p id="ciudad">s</p>
+            </div>
+            <div class="info-line">
+                <p id="fechaEvento">s</p>
+            </div>
+            <div class="info-line">
+                <p id="personas">s</p>
+            </div>
+            <div class="info-line">
+                <p id="fechaEmitida">s</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" style="background-image: url('src/3.png');">
+        <div class="content">
+        
+        </div>
+    </div>
+
+    <div class="page" style="background-image: url('src/4.png');">
+        <div class="content">
+        
+        </div>
+    </div>
+
+    <div class="page" style="background-image: url('src/5.png');">
+        <div class="content">
+        
+        </div>
+    </div>
+
+    <div class="page" style="background-image: url('src/6.png');">
+        <div class="content">
+        
+        </div>
+    </div>
+
+    <div class="page" style="background-image: url('src/7.png');">
+        <div class="content">
+        
+        </div>
+    </div>
+
+    <div class="page" style="background-image: url('src/8.png');">
+        <div class="content">
+        
+        </div>
+    </div>
+
+    <div class="page" style="background-image: url('src/9.png');">
+        <div class="content">
+        
+        </div>
+    </div>
+
+    <div class="page" style="background-image: url('src/10.png');">
+        <div class="content">
+            <div class="info-line">
+                <p id="costoFinalFlyer">s</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="page" style="background-image: url('src/11.png');">
+        <div class="content">
+        
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script> 
+</body>
+</html>

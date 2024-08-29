@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla de Presupuesto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black; /* Asegura que el texto sea negro */
+        }
+        .pdf-content {
+            position: relative;
+            width: 209,9mm;
+            height: 296mm;
+            padding: 20mm;
+            box-sizing: border-box;
+            background-image: url('Copia\ de\ PRESUPUESTO\ 1\ DE\ FEBRERO\ DE\ 2025\ ANDREA\ ACOSTA\ MORTEROS.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .content-block {
+            position: absolute;
+            top: 85mm;
+            left: 35mm;
+            width: calc(100% - 40mm);
+            color: black; /* Asegura que el texto dentro de este bloque sea negro */
+        }
+        .info-line {
+            display: flex;
+            margin-bottom: 25px;
+            align-items: center;
+        }
+        h4 {
+            margin: 0;
+            padding-left: 18px;
+            width: 300px;
+            font-size: 16px;
+            color: black; /* Asegura que los encabezados sean negros */
+        }
+        p {
+            margin: 0;
+            font-size: 16px;
+            color: black; /* Asegura que los párrafos sean negros */
+        }
+        h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: black; /* Asegura que los encabezados de nivel 3 sean negros */
+        }
+        .date-line {
+            position: absolute;
+            top: 50mm;
+            right: 59mm;
+            font-size: 14px;
+            color: black; /* Asegura que la fecha sea negra */
+        }
+    </style>
+</head>
+<body>
+    <div class="pdf-content">
+        <div class="date-line">
+            <p id="fechaEmitida">Fecha emitida:</p>
+        </div>
+        <div class="content-block">
+            <div class="info-line">
+                <h3>Datos generales</h3>
+            </div>
+            <div class="info-line">
+                <h4>Nombre del Cliente:</h4> <p id="cliente"></p>
+            </div>
+            <div class="info-line">
+                <h4>Ciudad:</h4> <p id="ciudad"></p>
+            </div>
+            <div class="info-line">
+                <h4>Fecha del Evento:</h4> <p id="fechaEvento"></p>
+            </div>
+            <div class="info-line">
+                <h4>Cantidad de Personas:</h4> <p id="personas"></p>
+            </div>
+            <div class="info-line">
+                <h4>Tipo de Evento:</h4> <p id="tipoEvento"></p>
+            </div>
+            <div class="info-line">
+                <h3>Informe presupuestario</h3>
+            </div>
+            <div class="info-line">
+                <h4>Presupuesto final:</h4> <p id="costoFinal"></p>
+            </div>
+            <div class="info-line">
+                <h4>Rentabilidad:</h4> <p id="rentabilidad"></p>
+            </div>
+            <div class="info-line">
+                <h4>Costo por Persona:</h4> <p id="costoPorPersona"></p>
+            </div>
+            <div class="info-line">
+                <h4>Ganancia Bruta:</h4> <p id="gananciaBruta"></p>
+            </div>
+            <div class="info-line">
+                <h4>Gastos en Insumos:</h4> <p id="gastosInsumos"></p>
+            </div>
+            <div class="info-line">
+                <h4>Sueldos Totales:</h4> <p id="sueldosTotales"></p>
+            </div>
+            <div class="info-line">
+                <h4>Gastos Totales:</h4> <p id="gastos"></p>
+            </div>
+            <div class="info-line">
+                <h4>Ganancia Neta:</h4> <p id="gananciaNeta"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html> 

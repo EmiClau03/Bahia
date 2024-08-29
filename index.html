@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Presupuesto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="src/logo.PNG">
+    <!-- Fuente Roboto de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="logo-container text-center mb-4">
+            <img src="src/logo.PNG" alt="Logo de la Empresa" class="img-fluid" style="max-width: 150px;">
+        </div>
+
+        <h1>Formulario de Presupuesto</h1>
+        <form id="presupuestoForm">
+            <div class="form-group">
+                <label for="personas">Cantidad de Personas:</label>
+                <input type="number" class="form-control" id="personas" required>
+            </div>
+            <div class="form-group">
+                <label for="cliente">Nombre del Cliente:</label>
+                <input type="text" class="form-control" id="cliente" required>
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" class="form-control" id="ciudad" required>
+            </div>
+            <div class="form-group">
+                <label for="kilometros">Kilómetros (ida):</label>
+                <input type="number" class="form-control" id="kilometros" required>
+            </div>
+            <div class="form-group">
+                <label for="camioneta">Seleccione la camioneta:</label>
+                <select class="form-control" id="camioneta" required>
+                    <option value="1">Camioneta Rock</option>
+                    <option value="2">Camioneta Combi </option>
+                    <option value="ambas">Ambas camionetas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fechaEvento">Fecha del Evento (dd/mm/aaaa):</label>
+                <input type="text" class="form-control" id="fechaEvento" placeholder="dd/mm/aaaa" required>
+            </div>
+            <div class="form-group">
+                <label for="tipoEvento">Tipo de Evento:</label>
+                <select class="form-control" id="tipoEvento" required>
+                    <option value="normal">Normal</option>
+                    <option value="gira">Gira</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="rentabilidad">Rentabilidad:</label>
+                <select class="form-control" id="rentabilidad" required>
+                    <option value="60">60% (Multiplicador 2.5)</option>
+                    <option value="66">66% (Multiplicador 3)</option>
+                    <option value="71">71% (Multiplicador 3.5)</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+            <button type="button" id="descargarPresupuesto" class="btn btn-success mt-3" style="display: none;">Generar Informe</button>
+            <button type="button" id="descargarFlyer" class="btn btn-success mt-3" style="display: none;">Generar Flyer</button>
+        </form>
+        <div id="resultado" class="mt-3"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
